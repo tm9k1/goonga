@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        "qguiapplication": "cpp",
+        "qqmlapplicationengine": "cpp",
+        "iostream": "cpp",
+        "*.moc": "cpp",
+        "*.qrc": "xml",
+        "*.ui": "xml"
+    },
+    "code-runner.executorMapByGlob": {
+        "*.cpp": "cd $dir; g++ $fileName -o $fileNameWithoutExt; ./$fileNameWithoutExt",
+        // "*.qml": "qmlscene",
+        "*.qml": "qtcreator -client",
+        "*.qrc": "qtcreator -client",
+        "*.ui": "qtcreator -client",
+        "*.qtd": "qtcreator -client",
+    },
+    "code-runner.executorMap": {
+        "cpp": null
+    },
+    "code-runner.runInTerminal": true,
+    // "terminal.integrated.env.windows": {
+    //     "QML2_IMPORT_PATH": "path/to/extra/qml/plugins"
+    // },
+}
