@@ -8,7 +8,8 @@
         "*.ui": "xml"
     },
     "code-runner.executorMapByGlob": {
-        "*.cpp": "cd $dir; g++ $fileName -o $fileNameWithoutExt; ./$fileNameWithoutExt",
+        // "*.cpp": "cd $dir; g++ $fileName -o $fileNameWithoutExt; ./$fileNameWithoutExt",
+        "*.cpp": "qtcreator -client",
         // "*.qml": "qmlscene",
         "*.qml": "qtcreator -client",
         "*.qrc": "qtcreator -client",

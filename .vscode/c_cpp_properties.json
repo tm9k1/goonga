@@ -4,6 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${default}",
+                "../**",
                 "/usr/include/x86_64-linux-gnu/qt5/**",
                 "/usr/include/c++/**",
                 "/usr/include/x86_64-linux-gnu/c++/**",
