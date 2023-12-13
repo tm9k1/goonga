@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file alias="main.qml">qml/main.qml</file>
+        <file alias="NowPlayingItem.qml">qml/NowPlayingItem.qml</file>
+        <file>qml/windows/QueueWindow.qml</file>
     </qresource>
 </RCC>
