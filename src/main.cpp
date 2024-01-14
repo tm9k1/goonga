@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     view.setMinimumSize(QSize(300,400));
     view.setColor(QColor(0,0,0));
     view.setSource(url);
-
     view.show();
+    view.setMinimumSize(QSize(300,300)); //TODO: need a better solution for opening larger window than minimum size
     return app.exec();
 }
