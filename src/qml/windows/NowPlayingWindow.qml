@@ -19,6 +19,13 @@ Item {
                 player.play();
             }
         }
+        // onPlaybackStateChanged: {
+        //     if (playbackState == MediaPlayer.PlayingState) {
+        //         console.log(player.posterUrl);
+        //         console.log(player.coverArtUrlLarge);
+        //         console.log(player.coverArtUrlLarge);
+        //     }
+        // }
     }
 
     Image {
@@ -36,7 +43,9 @@ Item {
             id: songDropArea
             anchors.fill: parent
             keys: [ "text/uri-list","text/plain","application/x-kde4-urilist" ]
+
             onDropped: {
+                overlay.visible = false;
                 if(drop.hasUrls) {
                     console.log("dropped stuff");
                     console.log(drop.urls);
@@ -45,6 +54,21 @@ Item {
                     } else
                         console.log("could not add items to playlist");
                 }
+            }
+
+            Overlay {
+                id:overlay
+                anchors.fill: parent
+                text: "Drop your music here!"
+                visible: false
+            }
+
+            onEntered: {
+                overlay.visible = true;
+            }
+
+            onExited: {
+                overlay.visible = false;
             }
         }
     }
