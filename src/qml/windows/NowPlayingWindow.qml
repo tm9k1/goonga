@@ -1,10 +1,11 @@
 import QtQuick 2.0
 import QtMultimedia 5.15
 import QtQuick.Window 2.15
+import QtQuick.Controls 1.1
 
 Item {
     id: root
-    Window {
+    ApplicationWindow {
         height: 100
         width: 100
         title: "Queue"
