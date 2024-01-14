@@ -2,18 +2,10 @@ import QtQuick 2.0
 import QtMultimedia 5.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 1.1
+import "qrc:/qml/components"
 
 Item {
     id: root
-    ApplicationWindow {
-        height: 100
-        width: 100
-        title: "Queue"
-        Rectangle {
-             anchors.fill: parent
-             color: "black"
-        }
-    }
     MediaPlayer {
         id: player
         playlist: Playlist {
@@ -36,22 +28,6 @@ Item {
         source: "image://provider/lol";
     }
 
-    Item {
-        id: noMediaOverlay
-        anchors.fill: parent
-        Rectangle {
-            id: noMediaOverlayRectangle
-            anchors.fill: parent
-            opacity: 0.5
-            color: "black"
-        }
-        Text {
-            id: noMediaOverlayRectangleText
-            anchors.centerIn: parent
-            color: "white"
-            text: qsTr("Nothing's playing right now")
-        }
-    }
 
     MouseArea {
         id: rootArea

@@ -3,5 +3,6 @@
         <file alias="main.qml">qml/main.qml</file>
         <file>qml/windows/QueueWindow.qml</file>
         <file>qml/windows/NowPlayingWindow.qml</file>
+        <file>qml/components/Overlay.qml</file>
     </qresource>
 </RCC>
